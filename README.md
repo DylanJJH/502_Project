@@ -22,7 +22,7 @@
 Over the past 20 years, video games have begun to shift in purpose and use. Up until 1994, games were not much more than time killers and competitive electronic games. The most vocal of this camp is the famous film critic Roger Ebert. He publicly battled against the perception of video games becoming art from 2006. But nowadays, with the flourish of gaming companies and development of gaming peripheral industries(figure 1), more and more people consider video games as a new form of art as well as one essential in daily lives.
 
 # Figure 1
-![](image/Figure 1.png)
+![](image/Figure 1.PNG)
 
 Just like other forms of arts, there are a thousand Hamlets in a thousand people's eyes, one's attitude towards games could be hugely affected by their preference of game types, their culture, their background etc. Since the centers of games are always the players, their reviews and tendencies matter. Here comes one crucial problem: how to rate a game by its review and how to judge whether a game is trending.
 
