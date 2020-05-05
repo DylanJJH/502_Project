@@ -67,7 +67,9 @@ Unzip size: 6.9GB
 The raw data from Amazon review dataset contains several unrelated features including(figure 2): 
 
 ![](image/Figure_2.PNG)
+
 And different columns have various data type(figure 3):
+
 ![](image/Figure_3.PNG)
 
 Besides the all-product dataset, we have another dataset named ‘Video Game’, containing all the game products on Amazon with relatively smaller size, the only difference between those two datasets is the Amazon datasets have full reviews while smaller one only contains part of reviews.
