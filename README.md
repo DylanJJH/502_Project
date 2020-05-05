@@ -3,14 +3,18 @@
 ## Modeling and Sentiment Analysis of Amazon Review and Twitch Stream Data
 
 ### Team: 5 AM
+
 ### Teammates: Hao Liu, Jianhao Ji, Qian Yi, Jingyu Zhang
 
 
 ## Executive Summary
 
 (1) Download and unzip Amazon Review data by using hadoop. Download the Twitch game data on the local machine, then unzip the .rar format data. Save the datasets in s3 bucket. 
+
 (2) Implement SparkSQL techniques to extract critical data, then perform data cleaning and data preprocessing. 
+
 (3) Build NLP models with Logistic Regression, TFIDF, Naive Bayes, Random Forest and Vader methods. Then compare model accuracies. 
+
 (4) Create Visualizations to better understand game trends and overall ratings. Generate insights based on the results. 
 
 ## Introduction
@@ -25,29 +29,42 @@ Just like other forms of arts, there are a thousand Hamlets in a thousand people
 In our project, we are going to focus on games’ reviews on Amazon and streaming tendencies on Twitch. We all know that the Amazon review section contains ‘Overall Rate’ and ‘Review’ where customers can both express their opinions on games they purchased and give them a score. We are going to implement sentiment analysis on current Amazon review datasets then conclude a reliable model to convert players’ review to numeric rates. Besides, we will analyze Twitch Streaming datasets and figure out the trending video games.
 
 ## Dataset
+
 #### Dataset one: Amazon Product Review Dataset
+
 This dataset includes review ID, product ID, reviewer name, overall rating, summary, helpful vote, and review time. It includes all product categories from Amazon Fashion to Video Games. 
+
 Unzip size: 54GB 
 
 #### Dataset two: Twitch Streaming Dataset
+
 This dataset includes Stream ID, current views, stream created time, game name, broadcaster ID, delay setting, follower number, partner status, language etc. 
+
 Unzip size: 6.9GB
 
 
 ## Code files
+
 (1) Data_cleaning.ipynb 
+
 (2) EDA twitch and Amazon_game.ipynb 
+
 (3) Logistic Regression.ipynb
+
 (4) TFIDF_cross_validation.ipynb 
+
 (5) NaiveBayes RandomForest.ipynb
+
 (6) Vader.ipynb
 
 
 
 ## Methods section
+
 ### Data Preprocessing and Analysis
 
 #### Data Preprocessing:
+
 The raw data from Amazon review dataset contains several unrelated features including(figure 2): 
 
 # Figure 2
@@ -90,9 +107,13 @@ Apparently, 5 points is the most popular rate. This gives us insight that in the
 ### Tools used for analyzing the dataset and the justification (tools, models, etc.) 
 
 Logistic Regression with TF-IDF Features
+
 Logistic Regression with Count Vector Features (Document-Term Vectors) using 5-Fold Cross Validation
+
 Naive Bayes 
+
 Random Forest
+
 Vader
 
 ### How did we model the dataset, what techniques used and why?
@@ -117,6 +138,7 @@ We choose this model for two major reasons: VADER processes punctuations and sto
 ### Hypothesis: 
 
 Hypothesis 1: The more popular the game is, the higher average rating it will have. 
+
 Hypothesis 2: Team-based and competitive game will be more popular than the individual single-player games
 
 ### Did we just visualize the dataset, and if so, why?
@@ -162,10 +184,10 @@ There are many video game websites and platforms in the world, some have rating 
 
 ## Bibliography/References
 
-Li, Susan. “Multi-Class Text Classification with PySpark.” Medium, Towards Data Science, 20 Feb. 2018, towardsdatascience.com/multi-class-text-classification-with-pyspark-7d78d022ed35.
-https://towardsdatascience.com/multi-class-text-classification-with-pyspark-7d78d022ed35
+Li, Susan. “Multi-Class Text Classification with PySpark.” Medium, Towards Data Science, 20 Feb. 2018, towardsdatascience.com/multi-class-text-classification-with-pyspark-7d78d022ed35. https://towardsdatascience.com/multi-class-text-classification-with-pyspark-7d78d022ed35
 
 Dataset Reference: 
+
 Twitch: https://clivecast.github.io/
 Amazon Review: http://jmcauley.ucsd.edu/data/amazon/links.html
 
@@ -173,11 +195,17 @@ Amazon Review: http://jmcauley.ucsd.edu/data/amazon/links.html
 ## Division of labor: 
 
 Data Cleaning: Jingyu Zhang, Jianhao Ji
+
 Exploratory Data Analysis: Qian Yi
+
 Data Modeling:
+
    Logistic Regression: Qian Yi, Jingyu Zhang
+   
    Naive Bayes & Random Forest: Jianhao Ji
+   
    Vader: Hao Liu
+   
 Report Write-up: All Members
 
 
