@@ -21,8 +21,7 @@
 
 Over the past 20 years, video games have begun to shift in purpose and use. Up until 1994, games were not much more than time killers and competitive electronic games. The most vocal of this camp is the famous film critic Roger Ebert. He publicly battled against the perception of video games becoming art from 2006. But nowadays, with the flourish of gaming companies and development of gaming peripheral industries(figure 1), more and more people consider video games as a new form of art as well as one essential in daily lives.
 
-# Figure 1
-![](image/Figure 1.PNG)
+![](image/Figure_1.PNG)
 
 Just like other forms of arts, there are a thousand Hamlets in a thousand people's eyes, one's attitude towards games could be hugely affected by their preference of game types, their culture, their background etc. Since the centers of games are always the players, their reviews and tendencies matter. Here comes one crucial problem: how to rate a game by its review and how to judge whether a game is trending.
 
@@ -67,11 +66,9 @@ Unzip size: 6.9GB
 
 The raw data from Amazon review dataset contains several unrelated features including(figure 2): 
 
-# Figure 2
-
+![](image/Figure_2.PNG)
 And different columns have various data type(figure 3):
-
-# Figure 3
+![](image/Figure_3.PNG)
 
 Besides the all-product dataset, we have another dataset named ‘Video Game’, containing all the game products on Amazon with relatively smaller size, the only difference between those two datasets is the Amazon datasets have full reviews while smaller one only contains part of reviews.
 
@@ -79,26 +76,21 @@ After investigating the raw data, we noticed that the asin is the unique ID for 
 
 At this point, there were many unrelated features such as column ‘ helpful’, column ‘reviewerID’ and ‘reviewerName’. Before implementing models, we dropped all the unrelated columns(figure 4):
 
-
-# Figure 4
-
+![](image/Figure_4.PNG)
 
 
 Simultaneously, we also cleaned the Twitch Streaming datasets. The raw datasets were in .txt format and separated in many small files so the first thing in the data cleaning step is merging the small datasets, then we raw Twitch Streaming dataset looks like(figure 5):
 
-
-# Figure 5
-
+![](image/Figure_5.PNG)
 
 Same as the Amazon datasets, we decided to drop some irrelevant columns: ‘broadcasters_created_time’, ‘stream_ID’, ‘delay_setting’, ‘playback_bitrate’, ‘source_resolution’, ‘broadcaster_name’, ‘partner_status’(figure 6).
 
-# Figure 6
-
+![](image/Figure_6.PNG)
 
 
 To better understand our Amazon datasets, we made some EDA to explore our cleaned data. Firstly, we want to figure out in the Amazon dataset, which overall score is the major score, we then generated a bar plot(figure 7):
 
-# Figure 7
+![](image/Figure_7.PNG)
 
 Apparently, 5 points is the most popular rate. This gives us insight that in the game category, most of the reviewers gave positive reviews, we can use it to testify our sentiment analysis results.
 
@@ -151,15 +143,11 @@ We did some visualization and tried to generate marketing insights for game prod
 
 According to the visualization and analysis, we reject hypothesis 1 that “The more popular the game is, the higher average rating it will have.” As shown in the visualization, the average ratings did not appear to have a direct relationship with the game popularity. The most popular games also have lower average ratings while the least popular games also have high average ratings. 
 
-# 两张图
-
+![](image/Figure_8.PNG)
 
 By visualizing and analyzing twitch stream data, we find that team-based and competitive games are much more popular than individual single-player games in twitch. Around 80% view in twitch is team-based or competitive games. However, when it comes to amazon, the situation converses. The games with high review numbers most are single games, like puzzle game, mobile game and etc. This phenomenon could be caused by the consumer type composition of these two companies and the various game access. The most customers in twitch are gamers themselves, but the game buyers in amazon in many cases buy these games for others. Also, for many games, now they can be downloaded on their home pages. Based on the above conditions, we cannot accept our hypothesis 2 now. We still need to gather more data from different sources to perform our project.
 
-
-# 两张图和下标题
-
-
+![](image/Figure_9.PNG)
 
 ### How to validate the results? 
 
