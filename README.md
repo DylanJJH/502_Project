@@ -188,15 +188,9 @@ Data Cleaning: Jingyu Zhang, Jianhao Ji
 
 Exploratory Data Analysis: Qian Yi
 
-Data Modeling:
-
-   Logistic Regression: Qian Yi, Jingyu Zhang
+Data Modeling: Qian Yi, Jingyu Zhang, Jianhao Ji, Hao Liu
    
-   Naive Bayes & Random Forest: Jianhao Ji
-   
-   Vader: Hao Liu
-   
-Report Write-up: All Members
+Report Write-up: Qian Yi, Jingyu Zhang, Jianhao Ji, Hao Liu
 
 
 
